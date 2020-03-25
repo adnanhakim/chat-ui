@@ -1,6 +1,8 @@
 import 'package:chat_app/widgets/category_selector.dart';
 import 'package:chat_app/widgets/favourite_contacts.dart';
+import 'package:chat_app/widgets/recent_chats.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class HomeScreen extends StatefulWidget {
   @override
@@ -21,7 +23,12 @@ class _HomeScreenState extends State<HomeScreen> {
         title: Center(
           child: Text(
             'Chats',
-            style: TextStyle(fontSize: 26.0, fontWeight: FontWeight.bold),
+            style: GoogleFonts.muli(
+              textStyle: TextStyle(
+                fontSize: 26.0,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
           ),
         ),
         elevation: 0.0,
@@ -48,6 +55,7 @@ class _HomeScreenState extends State<HomeScreen> {
               child: Column(
                 children: <Widget>[
                   FavouriteContacts(),
+                  RecentChats(),
                 ],
               ),
             ),

@@ -1,5 +1,6 @@
 import 'package:chat_app/models/message_model.dart';
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class FavouriteContacts extends StatelessWidget {
   @override
@@ -15,11 +16,13 @@ class FavouriteContacts extends StatelessWidget {
               children: <Widget>[
                 Text(
                   'Favourite Contacts',
-                  style: TextStyle(
-                    color: Colors.blueGrey,
-                    fontSize: 18.0,
-                    fontWeight: FontWeight.bold,
-                    letterSpacing: 1.0,
+                  style: GoogleFonts.muli(
+                    textStyle: TextStyle(
+                      fontSize: 18.0,
+                      fontWeight: FontWeight.bold,
+                      color: Colors.blueGrey,
+                      letterSpacing: 1.0,
+                    ),
                   ),
                 ),
                 IconButton(
@@ -49,10 +52,12 @@ class FavouriteContacts extends StatelessWidget {
                       SizedBox(height: 6.0),
                       Text(
                         favorites[index].name,
-                        style: TextStyle(
-                          color: Colors.blueGrey,
-                          fontSize: 16.0,
-                          fontWeight: FontWeight.w600,
+                        style: GoogleFonts.muli(
+                          textStyle: TextStyle(
+                            color: Colors.blueGrey,
+                            fontSize: 16.0,
+                            fontWeight: FontWeight.w600,
+                          ),
                         ),
                       ),
                     ],

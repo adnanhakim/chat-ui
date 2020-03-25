@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 
 class CategorySelector extends StatefulWidget {
   @override
@@ -31,11 +32,14 @@ class _CategorySelectorState extends State<CategorySelector> {
               ),
               child: Text(
                 categories[index],
-                style: TextStyle(
-                  color: index == selectedIndex ? Colors.white : Colors.white60,
-                  fontSize: 24.0,
-                  fontWeight: FontWeight.bold,
-                  letterSpacing: 1.2,
+                style: GoogleFonts.muli(
+                  textStyle: TextStyle(
+                    color:
+                        index == selectedIndex ? Colors.white : Colors.white60,
+                    fontSize: 24.0,
+                    fontWeight: FontWeight.bold,
+                    letterSpacing: 1.1,
+                  ),
                 ),
               ),
             ),
