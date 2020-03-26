@@ -1,6 +1,5 @@
 import 'package:chat_app/models/message_model.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 class RecentChats extends StatelessWidget {
   @override
@@ -47,12 +46,10 @@ class RecentChats extends StatelessWidget {
                           children: <Widget>[
                             Text(
                               chat.sender.name,
-                              style: GoogleFonts.muli(
-                                textStyle: TextStyle(
-                                  color: Colors.grey,
-                                  fontSize: 15.0,
-                                  fontWeight: FontWeight.bold,
-                                ),
+                              style: TextStyle(
+                                color: Colors.grey,
+                                fontSize: 15.0,
+                                fontWeight: FontWeight.bold,
                               ),
                             ),
                             SizedBox(height: 5.0),
@@ -60,12 +57,10 @@ class RecentChats extends StatelessWidget {
                               width: MediaQuery.of(context).size.width * 0.45,
                               child: Text(
                                 chat.text,
-                                style: GoogleFonts.muli(
-                                  textStyle: TextStyle(
-                                    color: Colors.blueGrey,
-                                    fontSize: 15.0,
-                                    fontWeight: FontWeight.w600,
-                                  ),
+                                style: TextStyle(
+                                  color: Colors.blueGrey,
+                                  fontSize: 15.0,
+                                  fontWeight: FontWeight.w600,
                                 ),
                                 overflow: TextOverflow.ellipsis,
                               ),
@@ -78,12 +73,10 @@ class RecentChats extends StatelessWidget {
                       children: <Widget>[
                         Text(
                           chat.time,
-                          style: GoogleFonts.muli(
-                            textStyle: TextStyle(
-                              color: Colors.grey,
-                              fontSize: 15.0,
-                              fontWeight: FontWeight.bold,
-                            ),
+                          style: TextStyle(
+                            color: Colors.grey,
+                            fontSize: 15.0,
+                            fontWeight: FontWeight.bold,
                           ),
                         ),
                         SizedBox(height: 5.0),
@@ -98,12 +91,10 @@ class RecentChats extends StatelessWidget {
                                 alignment: Alignment.center,
                                 child: Text(
                                   'NEW',
-                                  style: GoogleFonts.muli(
-                                    textStyle: TextStyle(
-                                      color: Colors.white,
-                                      fontSize: 12.0,
-                                      fontWeight: FontWeight.bold,
-                                    ),
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 12.0,
+                                    fontWeight: FontWeight.bold,
                                   ),
                                 ),
                               )
